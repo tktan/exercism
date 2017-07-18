@@ -4,8 +4,8 @@ end
 
 class FoodChain
   def self.i_know_an_old_lady(animal, aux="")
-    s = "I know an old lady who swallowed a #{animal}.\n"
-    s += "#{aux}\n" if not aux.empty?
+    s = "I know an old lady who swallowed a #{ animal }.\n"
+    s += "#{ aux }\n" if not aux.empty?
     s += self.send(animal) + "\n"
   end
 
@@ -14,7 +14,7 @@ class FoodChain
   end
 
   def self.swallowed_to_catch(x, y)
-    "She swallowed the #{x} to catch the #{y}.\n"
+    "She swallowed the #{ x } to catch the #{ y }.\n"
   end
 
   def self.spider
