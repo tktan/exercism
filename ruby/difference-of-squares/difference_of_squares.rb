@@ -8,11 +8,11 @@ class Squares
   end
 
   def square_of_sum
-    @ns.inject(0, :+) ** 2
+    @ns.sum ** 2
   end
 
   def sum_of_squares
-    @ns.map {|n| n ** 2}.inject(0, :+)
+    @ns.map { |n| n ** 2 }.sum
   end
 
   def difference
